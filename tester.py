@@ -9,4 +9,7 @@ except requests.exceptions.Timeout :
 except requests.exceptions.ConnectionError:
     print 'Connection error'
 else :
-    print response
+    if response == '' :
+        print 'Empty response'
+    else:
+        print response
